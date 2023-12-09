@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flujo de Preguntas</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a></a>
+
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="card" id="preguntas-container">
+            <h2>¿Área rural concentrada?</h2>
+            <p>este factor se refiere a la distancia geográfica en las viviendas de una misma población, aplicando la tabla de Criterios de definición de población rural y urbana explicado en el marco teórico, donde se define una población rural o urbana.</p>
+            <div class="botones-container">
+                <button onclick="responderPregunta(true)">SI</button>
+                <button onclick="responderPregunta(false)">NO</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img id="imagenPregunta" style="max-width: 100%; height: auto; display: block; margin: 0 auto; max-height: 300px;"
+                src="img/Screenshot 2023-12-09 081705.png">
+            <div class="botones-container">
+                <button onclick="abrirPopup()">Ver Flujo</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-button">
+        <button onclick="reiniciarFlujo()">Reiniciar Flujo</button>
+    </div>
+
+
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="cerrarPopup()">&times;</span>
+            <img src="img/Imagen1.png">
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/popup.js"></script>
+
+</body>
+
+</html>
